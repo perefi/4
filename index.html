@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+        }
+        body{
+            font-size: 14px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        header{
+            display: flex;
+        }
+        section{
+            width: 50%;
+            height: 100vh;
+        }
+        
+        header section:first-child{
+            position: relative;
+        }
+        header section:last-child{
+            position: relative;
+        }
+         header section:first-child img, header selection: last-child img{
+                width: 100%;
+                height: 100%;
+                object-fit:cover;
+                object-position: bottom center;
+        }
+        h1{
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 4vw; 
+        }
+        main{
+            width: 600px;
+            margin: auto;
+            font-family: 'jomolhari', serif;
+        }
+        main>p{
+            padding: 4em 0;
+            line-height: 1.4em;
+            color: pink;
+            column-count: 2;
+            column-gap: 30px;
+            column-rule: 1px solid pink;
+            text-align: justify;
+            hyphens: auto;
+        }
+        article{
+            padding: 0 4em;
+            color: gray;
+        }
+        article p{
+            margin: 0 0 1.2em 0;
+            text-align: justify;
+            hyphens: auto;
+        }
+        article p:first-child::first-letter{
+                font-family: 'georgia','cursive';
+                color: pink;
+                font-size: 9em;
+                float: left;
+                line-height: 6rem;
+                padding-right: 1rem;
+                padding-left: 0.5rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                }
+        .cercle{
+            background: pink;
+            border-radius: 50%;
+            shape-outside: circle(50%) border-box;
+            float:left;
+            max-width: 18em;
+            margin-left: -4em;
+            shape-margin: 0.4em;
+        }
+       .cercle img{
+            mix-blend-mode: hard-light;
+            border-radius: 50%;
+           shape-outside: circle(50%);
+        }
+        .exagon{
+            background: pink;
+            float:right;
+            max-width: 20em;
+            margin-right: -5em;
+            shape-outside: 1em;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)border-box;
+        }
+        
+        .exagon img{
+            background: pink;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+        
+        @media (max-width:600px){
+            body{
+                font-size: 14px;
+                background: blue;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <img src="img/b4.jpg" alt="Das switch table">
+            <h1>El poster suizo<br>Wolfang Weingart</h1>
+        </section>
+        <section>
+            <img src="img/c1.jpg" alt="Thundulus">
+            <h1>Neumáticos Pirelli<br>Lora Lamm</h1>
+        </section>
+    </header>
+    <main>
+        <p>Minim est possumus ex ab est culpa laborum. Tempor irure quorum ea nulla, ad 
+            quorum mentitum offendit iis anim te et noster nostrud, esse ullamco 
+            voluptatibus. Nulla pariatur despicationes. Est eiusmod voluptatibus do ubi ad 
+            fugiat dolore duis. Labore hic mandaremus quo duis, senserit ut noster, possumus 
+            fore anim se veniam, se iis culpa fugiat summis. Hic illum vidisse eruditionem, 
+            noster eruditionem offendit duis offendit.</p>
+        <article>
+            <p>Minim est possumus ex ab est culpa laborum. Tempor irure quorum ea nulla, ad 
+            quorum mentitum offendit iis anim te et noster nostrud, esse ullamco 
+            voluptatibus. Nulla pariatur despicationes. Est eiusmod voluptatibus do ubi ad 
+            fugiat dolore duis. Labore hic mandaremus quo duis, senserit ut noster, possumus 
+            fore anim se veniam, se iis culpa fugiat summis. Hic illum vidisse eruditionem, 
+            noster eruditionem offendit duis offendit, commodo sunt quamquam incurreret, non 
+            sed concursionibus iis quo magna incididunt ingeniis ad dolor consequat o labore 
+            aute, commodo ne aute expetendis si nisi de officia te quorum. Cernantur a 
+            officia. Noster occaecat transferrem do lorem firmissimum ingeniis irure
+            singulis, tempor cohaerescant ab incurreret non ex lorem doctrina eruditionem.lorem</p>
+            <div class="cercle">
+                <img src="img/campo-de-girasoles%20-%20copia.jpg" alt="obra1">
+            </div>
+            <p>Minim est possumus ex ab est culpa laborum. Tempor irure quorum ea nulla, ad 
+            quorum mentitum offendit iis anim te et noster nostrud, esse ullamco 
+            voluptatibus. Nulla pariatur despicationes. Est eiusmod voluptatibus do ubi ad 
+            fugiat dolore duis. Labore hic mandaremus quo duis, senserit ut noster, possumus 
+            fore anim se veniam, se iis culpa fugiat summis. Hic illum vidisse eruditionem, 
+            noster eruditionem offendit duis offendit, commodo sunt quamquam incurreret, non 
+            sed concursionibus iis quo magna incididunt ingeniis ad dolor consequat o labore 
+            aute, commodo ne aute expetendis si nisi de officia te quorum. Cernantur a 
+            officia. Noster occaecat transferrem do lorem firmissimum ingeniis irure 
+            singulis, tempor cohaerescant ab incurreret non ex lorem doctrina eruditionem.</p>
+            <div class="exagon">
+                <img src="img/llun4.jpg" alt="obra2">
+            </div>
+            <p>Minim est possumus ex ab est culpa laborum. Tempor irure quorum ea nulla, ad 
+            quorum mentitum offendit iis anim te et noster nostrud, esse ullamco 
+            voluptatibus. Nulla pariatur despicationes. Est eiusmod voluptatibus do ubi ad 
+            fugiat dolore duis. Labore hic mandaremus quo duis, senserit ut noster, possumus 
+            fore anim se veniam, se iis culpa fugiat summis. Hic illum vidisse eruditionem, 
+            noster eruditionem offendit duis offendit, commodo sunt quamquam incurreret, non 
+            sed concursionibus iis quo magna incididunt ingeniis ad dolor consequat o labore 
+            aute, commodo ne aute expetendis si nisi de officia te quorum. Cernantur a 
+            officia. Noster occaecat transferrem do lorem firmissimum ingeniis irure 
+            singulis, tempor cohaerescant ab incurreret non ex lorem doctrina eruditionem.</p>
+    </article>
+    </main>
+</body>
+</html>
